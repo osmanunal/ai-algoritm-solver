@@ -7,6 +7,18 @@ if __name__ == "__main__":
     with open('questions.yml', 'r') as file:
         data = yaml.safe_load(file)
 
+    while True:
+        print('Please select the question number you want to run:')
+        for key in data:
+            print(key)
+        print('q: quit')
+        question = input('Please enter the question number: ')
+        if question == 'q':
+            break
+        elif question not in data:
+            print('Invalid question number')
+        else:
+            break
     if 'knn' in data:
         k = data['knn']['k']
         quiz = data['knn']['quiz']
