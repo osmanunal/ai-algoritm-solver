@@ -1,0 +1,45 @@
+KNN: # KNN İÇİN ÖRNEK SORU
+  points:
+    - X: 25
+      Y: 40000
+      Label: n
+    - X: 35
+      Y: 60000
+      Label: n
+    - X: 45
+      Y: 80000
+      Label: n
+    - X: 20
+      Y: 20000
+      Label: n
+    - X: 35
+      Y: 120000
+      Label: n
+    - X: 52
+      Y: 18000
+      Label: n
+    - X: 23
+      Y: 95000
+      Label: y
+    - X: 40
+      Y: 62000
+      Label: y
+    - X: 60
+      Y: 100000
+      Label: y
+    - X: 48
+      Y: 220000
+      Label: y
+    - X: 33
+      Y: 150000
+      Label: y
+  k: 3
+
+  quiz:
+    X: 48
+    Y: 142000
+    Label: ''
+
+
+
+
