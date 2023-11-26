@@ -1,9 +1,9 @@
-from util import euclidean_distance, min_max_scaling
+from util import knn_euclidean_distance, min_max_scaling
 
 def knn(data, k, quiz):
     # Min-Max Scaling
-    x_values = [point['X'] for point in data['KNN']['points']]
-    y_values = [point['Y'] for point in data['KNN']['points']]
+    x_values = [point['X'] for point in data['knn']['points']]
+    y_values = [point['Y'] for point in data['knn']['points']]
 
     min_x, max_x = min(x_values), max(x_values)
     min_y, max_y = min(y_values), max(y_values)
@@ -11,14 +11,14 @@ def knn(data, k, quiz):
     quiz['X'] = min_max_scaling(quiz['X'], min_x, max_x, 0, 1)
     quiz['Y'] = min_max_scaling(quiz['Y'], min_y, max_y, 0, 1)
 
-    for point in data['KNN']['points']:
+    for point in data['knn']['points']:
         point['X'] = min_max_scaling(point['X'], min_x, max_x, 0, 1)
         point['Y'] = min_max_scaling(point['Y'], min_y, max_y, 0, 1)
 
     distances = []
 
-    for point in data['KNN']['points']:
-        distance = euclidean_distance(point, quiz)
+    for point in data['knn']['points']:
+        distance = knn_euclidean_distance(point, quiz)
         distances.append((point, distance))
 
     distances.sort(key=lambda x: x[1])  # Uzaklıklara göre sıralama

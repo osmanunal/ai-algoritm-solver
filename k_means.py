@@ -35,10 +35,10 @@ def update_centroids(values, clusters, k):
 
 def print_iteration_info(iteration, values, centroids, distances, clusters, new_centroids):
     print(f"Iteration {iteration + 1}:")
-    print("Values:", [f'{val:.4f}' for val in values])
-    print("Centroids:", [f'{centroid:.4f}' for centroid in centroids])
-    print("Distances:", [[f'{dist:.4f}' for dist in row] for row in distances])
+    print("Values:", [f'{val:.2f}' for val in values])
+    print("Centroids:", [f'{centroid:.2f}' for centroid in centroids])
+    print("Distances:", [[f'{dist:.2f}' for dist in row] for row in distances])
     print("Nearest Cluster:", clusters)
-    print("New Centroids:", [f'{centroid:.4f}' if centroid is not None else None for centroid in new_centroids])
+    print("New Centroids:", [f'{centroid:.2f}' if centroid is not None else None for centroid in new_centroids])
     print("-------------------")
 
