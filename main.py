@@ -19,7 +19,7 @@ if __name__ == "__main__":
         if question == '1':
             if 'knn' in data:
                 k = data['knn']['k']
-                quiz = data['knn']['quiz']
+                quiz = data['knn']['tests']
                 knn(data, k, quiz)
             else :
                 print('Knn sorusu bulunamadı.')

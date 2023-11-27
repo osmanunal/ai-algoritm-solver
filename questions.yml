@@ -1,48 +1,115 @@
 knn: # KNN İÇİN ÖRNEK SORU
+#  points:
+#    - X: 25
+#      Y: 40000
+#      Label: n
+#    - X: 35
+#      Y: 60000
+#      Label: n
+#    - X: 45
+#      Y: 80000
+#      Label: n
+#    - X: 20
+#      Y: 20000
+#      Label: n
+#    - X: 35
+#      Y: 120000
+#      Label: n
+#    - X: 52
+#      Y: 18000
+#      Label: n
+#    - X: 23
+#      Y: 95000
+#      Label: y
+#    - X: 40
+#      Y: 62000
+#      Label: y
+#    - X: 60
+#      Y: 100000
+#      Label: y
+#    - X: 48
+#      Y: 220000
+#      Label: y
+#    - X: 33
+#      Y: 150000
+#      Label: y
   points:
-    - X: 25
-      Y: 40000
+    - X: 34
+      Y: 170
+      Z: 67
       Label: n
-    - X: 35
-      Y: 60000
-      Label: n
-    - X: 45
-      Y: 80000
-      Label: n
-    - X: 20
-      Y: 20000
-      Label: n
-    - X: 35
-      Y: 120000
-      Label: n
-    - X: 52
-      Y: 18000
-      Label: n
-    - X: 23
-      Y: 95000
-      Label: y
-    - X: 40
-      Y: 62000
-      Label: y
-    - X: 60
-      Y: 100000
-      Label: y
-    - X: 48
-      Y: 220000
-      Label: y
     - X: 33
-      Y: 150000
-      Label: y
+      Y: 180
+      Z: 78
+      Label: n
+    - X: 34
+      Y: 186
+      Z: 95
+      Label: p
+    - X: 19
+      Y: 157
+      Z: 65
+      Label: p
+    - X: 21
+      Y: 165
+      Z: 71
+      Label: n
+    - X: 27
+      Y: 172
+      Z: 84
+      Label: n
+    - X: 27
+      Y: 178
+      Z: 81
+      Label: n
+    - X: 24
+      Y: 150
+      Z: 86
+      Label: p
+    - X: 29
+      Y: 168
+      Z: 93
+      Label: p
+
+    - X: 38
+      Y: 170
+      Z: 97
+      Label: p
   k: 3
 
-  quiz:
-    X: 48
-    Y: 142000
-    Label: ''
+  tests:
+   - X: 38
+     Y: 167
+     Z: 101
+     Label: p
+
+   - X: 42
+     Y: 164
+     Z: 101
+     Label: p
+
+   - X: 42
+     Y: 168
+     Z: 101
+     Label: p
+
+   - X: 44
+     Y: 179
+     Z: 101
+     Label: p
+
+   - X: 45
+     Y: 189
+     Z: 104
+     Label: p
+
 
 k-means: # K-MEANS İÇİN ÖRNEK SORU
     values: [15,15,16,19,19,20,20,21,22,28,35,40,41,42,43,44,60,61,65]
     cendroids: [16,22]
+#    values: [ 15,15,16,19,19,20,20,21,22,28,35,40,41,42,43,44,60,61,65 ]
+#    cendroids: [ 16,22 ]
+
     distance_function: 'manhattan'      # manhattan, euclidean, minkowski
 
 confusion_matrix:
